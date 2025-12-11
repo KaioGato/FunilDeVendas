@@ -1,149 +1,175 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Funil de Vendas - Produto X</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Arial', sans-serif;
-    }
+    <link rel="stylesheet" href="style.css">
 
-    body {
-      line-height: 1.6;
-      background: #f4f4f4;
-      color: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    header.hero {
-      background: #1e88e5;
-      color: white;
-      text-align: center;
-      padding: 4rem 2rem;
-    }
+    <title>MVP Solar – Energia Solar Inteligente</title>
 
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-
-    .cta-btn {
-      background: #ffca28;
-      color: #1e88e5;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-    }
-
-    section {
-      padding: 3rem 2rem;
-      text-align: center;
-    }
-
-    .benefits ul {
-      list-style: none;
-      margin-top: 1rem;
-    }
-
-    .benefits li {
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .testimonials {
-      background: #fff;
-    }
-
-    .testimonial {
-      background: #e3f2fd;
-      padding: 1.5rem;
-      margin: 1rem auto;
-      max-width: 600px;
-      border-radius: 10px;
-    }
-
-    .cta {
-      background: #1e88e5;
-      color: white;
-    }
-
-    .cta form {
-      margin-top: 1rem;
-    }
-
-    .cta input, .cta button {
-      padding: 0.8rem;
-      margin: 0.5rem;
-      border: none;
-      border-radius: 5px;
-      width: 80%;
-      max-width: 300px;
-    }
-
-    .cta button {
-      background: #ffca28;
-      color: #1e88e5;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    footer {
-      background: #0d47a1;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-  </style>
 </head>
+
 <body>
-  <header class="hero">
-    <h1>Transforme sua vida com o Produto X</h1>
-    <p>Descubra como alcançar seus objetivos mais rápido com nosso método exclusivo</p>
-    <a href="#form" class="cta-btn">Quero Começar Agora</a>
-  </header>
 
-  <section class="benefits">
-    <h2>Por que escolher o Produto X?</h2>
-    <ul>
-      <li>✅ Método testado e aprovado</li>
-      <li>✅ Resultados comprovados em até 7 dias</li>
-      <li>✅ Suporte especializado durante todo o processo</li>
-    </ul>
-  </section>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="logo">
+              <img src="Assents/mvplogo.png" alt="Logo MVP Solar">
+              <span>MVP TECH</span> 
+            </div>
+      
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
-  <section class="testimonials">
-    <h2>O que nossos clientes dizem:</h2>
-    <div class="testimonial">
-      <p>"Consegui dobrar minhas vendas em um mês! Super recomendo!"</p>
-      <span>— Ana Paula, Empreendedora</span>
+            <nav class="menu" id="menu">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#beneficios">Benefícios</a>
+                <a href="#simulacao">Simulação</a>
+                <a href="https://wa.me/5592985955327" target="_blank" class="btn-contato">Contato</a>
+
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <h1>Economize até <span>95%</span> na sua conta de energia</h1>
+        <p>Energia solar com instalação rápida, garantia e suporte completo.</p>
+        <a href="#simulacao" class="btn-principal">Simular Economia</a>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="sobre">
+    <div class="sobre-container">
+
+        <div class="sobre-texto">
+            <h2>Sobre a MVP Tech</h2>
+            <p>
+                A MVP Tech é uma empresa especializada em soluções de energia solar e eficiência energética.
+                Atuamos com tecnologia de ponta, equipes qualificadas e compromisso total com o cliente.
+            </p>
+
+            <p>
+                Nosso objetivo é entregar projetos seguros, econômicos e inteligentes, permitindo que você
+                economize até <strong>95% da sua conta de luz</strong> com energia limpa e sustentável.
+            </p>
+
+            <a href="https://wa.me/5592985955327" target="_blank" class="btn-sobre">
+                Falar com Especialista
+            </a>
+        </div>
+
+        <div class="sobre-img">
+            <img src="Assents/solarteam.png" alt="Equipe MVP Tech">
+        </div>
+
     </div>
-    <div class="testimonial">
-      <p>"O Produto X realmente mudou minha rotina. Vale cada centavo."</p>
-      <span>— João Mendes, Freelancer</span>
+    </section>
+
+      <!-- BENEFÍCIOS -->
+<section id="beneficios" class="beneficios">
+    <h2>Por que escolher energia solar?</h2>
+
+    <div class="beneficios-container">
+
+        <div class="beneficio-card">
+            <div class="icon">💰</div>
+            <h3>Economia Real</h3>
+            <p>Reduza sua conta de energia em até <strong>95%</strong> com um sistema solar dimensionado para você.</p>
+        </div>
+
+        <div class="beneficio-card">
+            <div class="icon">🌱</div>
+            <h3>Energia Sustentável</h3>
+            <p>Energia limpa, renovável e que contribui diretamente para um futuro verde.</p>
+        </div>
+
+        <div class="beneficio-card">
+            <div class="icon">🏠</div>
+            <h3>Valorização do Imóvel</h3>
+            <p>Imóveis com energia solar podem valorizar até <strong>20%</strong> no mercado.</p>
+        </div>
+
+        <div class="beneficio-card">
+            <div class="icon">🛠️</div>
+            <h3>Suporte Completo</h3>
+            <p>Da análise à instalação: acompanhamento total da equipe especializada MVP Tech.</p>
+        </div>
+
     </div>
-  </section>
+</section>
 
-  <section class="cta" id="form">
-    <h2>Garanta sua Vaga Gratuita</h2>
-    <p>Preencha com seu melhor e-mail e receba acesso agora mesmo:</p>
-    <form>
-      <input type="text" placeholder="Seu nome" required />
-      <input type="email" placeholder="Seu melhor e-mail" required />
-      <button type="submit">Acessar Agora</button>
-    </form>
-  </section>
 
-  <footer>
-    <p>&copy; 2025 - Sua Empresa. Todos os direitos reservados.</p>
-  </footer>
+
+    <!-- SIMULAÇÃO -->
+    <section id="simulacao" class="simulacao">
+        <h2>Simule sua economia</h2>
+        <p>Digite o valor médio da sua conta de energia.</p>
+
+        <div class="simulador-box">
+            <label for="valorConta">Valor da conta (R$):</label>
+            <input id="valorConta" type="number" placeholder="Ex: 250">
+
+            <button id="calcularBtn">Calcular</button>
+
+            <div id="resultado"></div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        © 2025 MVP Solar — Todos os direitos reservados.
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        /* --- MENU MOBILE --- */
+        const hamburger = document.getElementById("hamburger");
+        const menu = document.getElementById("menu");
+
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle("open");
+            hamburger.classList.toggle("active");
+        });
+
+        document.addEventListener("click", (event) => {
+            const insideMenu = menu.contains(event.target);
+            const insideHamburger = hamburger.contains(event.target);
+
+            if (!insideMenu && !insideHamburger) {
+                menu.classList.remove("open");
+                hamburger.classList.remove("active");
+            }
+        });
+
+        /* --- SIMULADOR --- */
+        document.getElementById("calcularBtn").addEventListener("click", () => {
+            const valor = Number(document.getElementById("valorConta").value);
+
+            if (!valor || valor <= 0) {
+                document.getElementById("resultado").innerHTML =
+                    "Digite um valor válido.";
+                return;
+            }
+
+            const economia = valor * 0.95;
+            document.getElementById("resultado").innerHTML =
+                `Você pode economizar até <span style="color:#ffbb00;">R$ ${economia.toFixed(2)}</span> por mês!`;
+        });
+
+        
+    </script>
+
 </body>
 </html>
